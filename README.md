@@ -40,15 +40,21 @@ Directed Fuzzing seems to be a current hot research topic. This repository aims 
 
 #### [arxiv'19] V-Fuzz: Vulnerability-Oriented Evolutionary Fuzzing [[paper]](https://arxiv.org/pdf/1901.01142.pdf)
 
-#### [SANER'20] Sequence directed hybrid fuzzing
+#### [SANER'20] Sequence directed hybrid fuzzing [[paper]](./sequence_hybrid.pdf)
 
 #### [ICSE'20] Targeted Greybox Fuzzing with Static Lookahead Analysis [[paper]](https://mariachris.github.io/Pubs/ICSE-2020.pdf)
 
 #### [SEC'20] FuzzGuard: Filtering out Unreachable Inputs in Directed Grey-box Fuzzing through Deep Learning [[paper]](http://kaichen.org/paper/conference/sec20summer-final343.pdf) [[project]](https://github.com/zongpy/FuzzGuard)
 
-#### [SEC'20] ParmeSan: Sanitizer-guided Greybox Fuzzing [[paper]](https://download.vusec.net/papers/parmesan_sec20.pdf) [[project]](https://github.com/vusec/parmesan)
+#### [SEC'20] ParmeSan: Sanitizer-guided Greybox Fuzzing [[paper]](https://download.vusec.net/papers/parmesan_sec20.pdf) [[project]](https://github.com/vusec/parmesan) [[my slides]](./ParmeSan.pdf)
 
 #### [arxiv'20] Binary-level Directed Fuzzing for Use-After-Free Vulnerabilities [[paper]](https://arxiv.org/pdf/2002.10751.pdf)
+
+#### [arxiv'20] TOFU: Target-Oriented FUzzer [[paper]](https://arxiv.org/pdf/2004.14375.pdf)
+- *Command-line flags*: TOFU augments the input space that it explores to include command-line flags, so that users do not have to select such flags manually.
+- *Distance metric*: the number of correct branching decisions needed to reach the target, and does not use a complicated relationship to the history of the annealing that has taken place (e.g., min-max normalized values)
+- *Input-structure aware*: TOFU leverages knowledge of the program’s input structure in the form of a protobuf
+specification.
 
 ## Others
 #### [ISSTA'11] Statically-Directed Dynamic Automated Test Generation [[paper]](http://bitblaze.cs.berkeley.edu/papers/testgen-issta11.pdf)
